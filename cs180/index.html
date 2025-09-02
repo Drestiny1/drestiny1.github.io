@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CS 180 • Projects</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>CS 180 — Projects</h1>
+    <p class="subtitle">Choose a project to view details</p>
+  </header>
+
+  <main class="container">
+    <div class="grid">
+      <div class="card">
+        <a class="button" href="/cs180/project1/">Project 0</a>
+      </div>
+
+      <!-- Disabled projects (stay on same page when clicked) -->
+      <div class="card">
+        <a class="button disabled" href="#" aria-disabled="true" data-stay>Project 1</a>
+      </div>
+      <div class="card">
+        <a class="button disabled" href="#" aria-disabled="true" data-stay>Project 2</a>
+      </div>
+      <div class="card">
+        <a class="button disabled" href="#" aria-disabled="true" data-stay>Project 3</a>
+      </div>
+      <div class="card">
+        <a class="button disabled" href="#" aria-disabled="true" data-stay>Project 4</a>
+      </div>
+      <div class="card">
+        <a class="button disabled" href="#" aria-disabled="true" data-stay>Project 5</a>
+      </div>
+    </div>
+
+    <footer>
+      <hr />
+      <a class="button secondary" href="/">← Back to Nicole's Projects</a>
+    </footer>
+  </main>
+
+  <script>
+    // Make disabled buttons "unclickable" and stay on the same page
+    document.querySelectorAll('[data-stay]').forEach(el => {
+      el.addEventListener('click', (e) => {
+        e.preventDefault();
+        // Optional: brief visual feedback
+        el.style.transform = 'translateY(0)';
+      });
+    });
+  </script>
+</body>
+</html>
