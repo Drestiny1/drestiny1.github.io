@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nicole's Projects</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Nicole's Projects</h1>
+    <p class="subtitle">Classes • Labs • Side quests</p>
+  </header>
+
+  <main class="container">
+    <div class="grid">
+      <div class="card">
+        <a class="button" href="/cs180/">Computer Science 180</a>
+      </div>
+      <!-- Add more class cards later by duplicating this block -->
+    </div>
+
+    <footer>© <span id="year"></span> Nicole • Built with GitHub Pages</footer>
+  </main>
+
+  <script>
+    // tiny enhancement: set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
